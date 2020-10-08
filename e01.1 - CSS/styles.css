@@ -1,0 +1,48 @@
+*{
+    font-family: Verdana;
+    font-size: 13px;
+}
+
+div {
+    border-bottom: dashed;
+    width: 1000px;
+}
+
+.header {
+    height: 120px;
+    background-color: #210439;
+}
+
+#logo{
+    height: 120px;
+}
+
+#titleText{
+    margin-left: 500px;
+    text-decoration-color: white;
+    font-size: 200%;
+}
+
+.menu {
+    height: 50px;
+}
+
+.pattern {
+    height: 100px;
+}
+
+.centralImg {
+    height: 300px;
+}
+
+.grades {
+    height: 250px;
+}
+
+.languages {
+    height: 300px;
+}
+
+.footer {
+    height: 100px;
+}
