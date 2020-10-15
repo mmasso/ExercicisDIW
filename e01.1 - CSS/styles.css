@@ -1,37 +1,75 @@
-*{
+* {
     font-family: Verdana;
     font-size: 13px;
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 div {
-    border-bottom: dashed;
+    border-bottom: 2px dashed black;
     width: 1000px;
 }
 
 .header {
     height: 120px;
     background-color: #210439;
-}
-
-#logo{
-    height: 120px;
     background-image: url(img/logo.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: contain;
 }
 
-#titleText{
-    margin-left: 500px;
+#titleText {
+    display: inline-block;
     color: white;
+}
+
+#titleText h1 {
+    padding-top: 20px;
+    padding-left: 500px;
     font-size: 2rem;
+}
+
+#titleText p {
+    padding-top: 20px;
+    padding-left: 540px;
 }
 
 .menu {
     height: 50px;
+}
+
+.menu ul {
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu ul li {
+    height: 100%;
+    float: left;
+    background-color: #9376AC;
+    display: flex;
+    text-align: center;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-right: 1px solid white;
+    padding: 13px 20px;
+}
+
+.menu li:last-child {
+    border-right: none;
 }
 
 .pattern {
@@ -43,20 +81,24 @@ div {
 .centralImg {
     height: 300px;
     overflow: hidden;
-    overflow-y: inherit;
-    
-}
-
-.centralImg img {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .grades {
     height: 250px;
+    background-color: #DCDCDC;
 }
 
 .languages {
     height: 300px;
+}
+
+.languages img {
+    width: 200px;
+    border: 1px solid black;
+    margin: auto;
 }
 
 .footer {
