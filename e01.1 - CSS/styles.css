@@ -1,16 +1,18 @@
 * {
-    font-family: Verdana;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     position: relative;
-    max-width: 1000px;
+    width: 1000px;
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
 }
 
 div {
     border-bottom: 2px dashed black;
-    width: 1000px;
 }
 
 .header {
@@ -27,13 +29,11 @@ div {
 }
 
 #titleText h1 {
-    padding-top: 20px;
     padding-left: 500px;
     font-size: 2rem;
 }
 
 #titleText p {
-    padding-top: 20px;
     padding-left: 540px;
 }
 
@@ -78,12 +78,15 @@ div {
     background-repeat: repeat;
 }
 
+.centralImg img{
+    max-width: 1000px;
+}
+
 .centralImg {
     height: 300px;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .grades {
@@ -91,16 +94,54 @@ div {
     background-color: #DCDCDC;
 }
 
+.grades table {
+    border: 1px solid black;
+  }
+
+.grades table:first-child td:first-child{
+    border-bottom: 1px solid black;
+}
+
 .languages {
     height: 300px;
 }
+.language-block {
+    padding-top: 5px;
+    width: 25%;
+    text-align: center;
+    float: left;
+    border-left: 1px solid black;
+}
 
-.languages img {
-    width: 200px;
-    border: 1px solid black;
-    margin: auto;
+.language-block:last-child {
+    border-right: 1px solid black;
+}
+
+.language-block p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.language-block img {
+    width: 100%;
+    opacity: 0.5;
 }
 
 .footer {
     height: 100px;
+    background-color: #210439;
+    color: white;
+    position: relative;
+}
+
+.footer #top-left{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.footer #bottom-right{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
